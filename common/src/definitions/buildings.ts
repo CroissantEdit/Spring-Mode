@@ -1943,6 +1943,101 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
             { idString: "ship", position: v(80, -50) },
             { idString: "crane", position: v(-25, -95) }
         ]
-    }
+    },
+    {
+        idString: "Japan",
+        name: "Japan",
+        spawnHitbox: RectangleHitbox.fromRect(60, 88),
+        ceilingHitbox: RectangleHitbox.fromRect(40, 80),
+        scopeHitbox: RectangleHitbox.fromRect(40, 70),
+        floorImages: [{
+            key: "japan_floor",
+            position: v(0, 0)
+        }],
+        ceilingImages: [{
+            key: "japan_ceiling",
+            position: v(0, 0)
+        }],
+        floors: [
+            {
+                type: "stone",
+                hitbox: RectangleHitbox.fromRect(40, 88)
+            }
+        ],
+        obstacles: [
+            {
+                idString: "japan_wall_1",
+                position: v(-20, 7),
+                rotation: 1
+            },
+            {
+                idString: "japan_wall_2",
+                position: v(.5, 32.35),
+                rotation: 2
+            },
+            {
+                idString: "japan_wall_2",
+                position: v(-0.5, -32.35),
+                rotation: 2
+            },
+            {
+                idString: "japan_wall_3",
+                position: v(5.35, 20),
+                rotation: 2
+            },
+            {
+                idString: "japan_wall_3",
+                position: v(-5.35, -20),
+                rotation: 2
+            },          
+            {
+                idString: "japan_wall_1",
+                position: v(20, -7),
+                rotation: 1
+            },
+            {
+                idString: "flower_pot",
+                position: v(-15.1, -15),
+                rotation: 1
+            },
+            {
+                idString: "flower_pot",
+                position: v(-7.3, -15),
+                rotation: 1
+            },
+            {
+                idString: "flower_pot",
+                position: v(15.1, 15),
+                rotation: 1
+            },
+            {
+                idString: "flower_pot",
+                position: v(7.3, 15),
+                rotation: 1
+            },
+            {
+                idString: "wood_sliding_door",
+                position: v(-14.8, 20),
+                rotation: 2
+            },
+            {
+                idString: "wood_sliding_door",
+                position: v(14.8, -20),
+                rotation: 0
+            },
+            {
+                idString: "katana_crate",
+                position: v(0, 0),
+                rotation: 1
+            },
+          
+        ],
 
+        lootSpawners: [
+            {
+                position: v(0, 0),
+                table: "warehouse"
+            }
+        ],
+    },
 ]);

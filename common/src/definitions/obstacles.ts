@@ -256,6 +256,250 @@ function makeGunMount(idString: string, name: string): ObstacleDefinition {
 export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
     [
         {
+            idString: "katana_crate",
+            name: "katana crate",
+            material: "wood",
+            health: 150,
+            scale: {
+                spawnMin: 1.0,
+                spawnMax: 1.0,
+                destroy: 0.7
+            },
+            hitbox: RectangleHitbox.fromRect(15, 6.5),
+            rotationMode: RotationMode.Limited,
+            hasLoot: true
+        },
+        {
+            idString: "wood_sliding_door",
+            name: "wood_sliding_door",
+            material: "wood",
+            health: 150,
+            operationStyle: "slide",
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 1
+            
+            },
+            hitbox: RectangleHitbox.fromRect(10.15, 1.6, v(-0.44, 0)),
+            rotationMode: RotationMode.Limited,
+            noResidue: true,
+            role: ObstacleSpecialRoles.Door,
+            zIndex: ZIndexes.ObstaclesLayer3,
+            frames: {
+                particle: "furniture_particle"
+            }
+        },
+        {
+            idString: "japan_wall_1",
+            name: "Japan Wall",
+            material: "wood",
+            health: 500,
+            indestructible: false,
+            hideOnMap: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.95
+            },
+            hitbox: RectangleHitbox.fromRect(52.5, 1.7),
+            rotationMode: RotationMode.Limited,
+            reflectBullets: false,
+            noResidue: true,
+            frames: {
+                particle: "metal_particle"
+            }
+        },
+        {
+            idString: "japan_wall_2",
+            name: "Japan Wall",
+            material: "wood",
+            health: 500,
+            indestructible: false,
+            hideOnMap: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.95
+            },
+            hitbox: RectangleHitbox.fromRect(41, 1.7),
+            rotationMode: RotationMode.Limited,
+            reflectBullets: false,
+            noResidue: true,
+            frames: {
+                particle: "metal_particle"
+            }
+        },
+        {
+            idString: "japan_wall_3",
+            name: "Japan Wall",
+            material: "wood",
+            health: 500,
+            indestructible: false,
+            hideOnMap: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.95
+            },
+            hitbox: RectangleHitbox.fromRect(31, 1.7),
+            rotationMode: RotationMode.Limited,
+            reflectBullets: false,
+            noResidue: true,
+            frames: {
+                particle: "metal_particle"
+            }
+        },
+        {
+            idString: "flower_pot",
+            name: "flower_pot",
+            material: "porcelain",
+            health: 100,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.8
+            },
+            hitbox: new CircleHitbox(3.7),
+            // TODO Figure out why this doesn't work
+            /*hitbox: new ComplexHitbox([
+                RectangleHitbox.fromRect(v(-3.18, 1.25), v(3.2, 4.05)),
+                new CircleHitbox(2.5)
+            ]),*/
+            rotationMode: RotationMode.Limited,
+            hasLoot: true
+            
+        },
+       
+        {
+            idString: "cherry_blossom_tree",
+            name: "cherry_blossom_tree",
+            material: "tree",
+            health: 500,
+            scale: {
+                spawnMin: 0.9,
+                spawnMax: 1.1,
+                destroy: 0.75
+            },
+            hitbox: new CircleHitbox(11),
+            spawnHitbox: new CircleHitbox(2),
+            rotationMode: RotationMode.Full,
+            zIndex: ZIndexes.ObstaclesLayer4
+        },
+        {
+            idString: "bank_tree",
+            name: "bank_tree",
+            material: "tree",
+            health: 180,
+            scale: {
+                spawnMin: 0.9,
+                spawnMax: 1,
+                destroy: 0.75
+            },
+            hitbox: new CircleHitbox(5.5),
+            rotationMode: RotationMode.Full, 
+            spawnMode: MapObjectSpawnMode.RiverBank,
+            zIndex: ZIndexes.ObstaclesLayer4
+        },
+          {
+            idString: "flower", //this is pink
+            name: "flower",
+            material: "stone",
+            health: 100,
+            indestructible: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.9
+            },
+            hideOnMap: true,
+            hitbox: RectangleHitbox.fromRect(8.3, 12.2),
+            rotationMode: RotationMode.Limited,
+            noCollisions: true
+        },
+        {
+            idString: "pink_flower", // why the fuck did i name it pink_flower is a fucking petal
+            name: "pink_flower",
+            material: "stone",
+            health: 100,
+            indestructible: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.9
+            },
+            hideOnMap: true,
+            hitbox: RectangleHitbox.fromRect(8.3, 12.2),
+            rotationMode: RotationMode.Limited,
+            noCollisions: true
+        },
+        {
+            idString: "flower_group_white",
+            name: "flower_group_white",
+            material: "stone",
+            health: 100,
+            indestructible: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.9
+            },
+            hideOnMap: true,
+            hitbox: RectangleHitbox.fromRect(8.3, 12.2),
+            rotationMode: RotationMode.Limited,
+            noCollisions: true
+        },
+        {
+            idString: "water_rock",
+            name: "water_rock",
+            material: "stone",
+            health: 250,
+            scale: {
+                spawnMin: 0.9,
+                spawnMax: 1.1,
+                destroy: 0.5
+            },
+            hitbox: new CircleHitbox(6),
+            spawnMode: MapObjectSpawnMode.River,
+            spawnHitbox: new CircleHitbox(4),
+            rotationMode: RotationMode.Full,
+            zIndex: ZIndexes.ObstaclesLayer3
+        },
+        {
+            idString: "flower_white",
+            name: "flower_white",
+            material: "stone",
+            health: 100,
+            indestructible: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.9
+            },
+            hideOnMap: true,
+            hitbox: RectangleHitbox.fromRect(8.3, 12.2),
+            rotationMode: RotationMode.Limited,
+            noCollisions: true
+        },
+        {
+            idString: "bank_birch_tree",
+            name: "bank_birch_tree",
+            material: "tree",
+            health: 180,
+            scale: {
+                spawnMin: 0.9,
+                spawnMax: 1,
+                destroy: 0.75
+            },
+            hitbox: new CircleHitbox(5.5),
+            spawnHitbox: new CircleHitbox(2.7),
+            rotationMode: RotationMode.Full,
+            
+            
+            spawnMode: MapObjectSpawnMode.RiverBank,
+            zIndex: ZIndexes.ObstaclesLayer4
+        },
+        {
             idString: "oak_tree",
             name: "Oak Tree",
             material: "tree",
@@ -992,6 +1236,25 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             },
             hideOnMap: true,
             hitbox: RectangleHitbox.fromRect(21.7, 1.5, v(0, -0.4)),
+            rotationMode: RotationMode.Limited,
+            frames: {
+                particle: "furniture_particle"
+            }
+        },
+        {
+            idString: "small_bridge",
+            name: "small_bridge",
+            material: "wood",
+            health: 200,
+            indestructible: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.95
+            },
+            hideOnMap: false,
+            hitbox: RectangleHitbox.fromRect(21.7, 1.5, v(0, -0.4)),
+            spawnMode: MapObjectSpawnMode.River,
             rotationMode: RotationMode.Limited,
             frames: {
                 particle: "furniture_particle"

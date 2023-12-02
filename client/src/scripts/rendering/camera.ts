@@ -3,6 +3,7 @@ import { randomFloat } from "../../../../common/src/utils/random";
 import { v, vAdd, vAdd2, type Vector, vMul } from "../../../../common/src/utils/vector";
 import { type Game } from "../game";
 import { EaseFunctions, Tween } from "../utils/tween";
+import { AdvancedBloomFilter } from "pixi-filters";
 
 export class Camera {
     pixi: Application;
@@ -34,7 +35,13 @@ export class Camera {
         this.container = new Container();
         this.container.sortableChildren = true;
         this.pixi.stage.addChild(this.container);
-
+        this.container.filters = [new AdvancedBloomFilter({
+            threshold: .1,
+            bloomScale: .77,
+            brightness: .5,
+            blur: 2,
+            quality: 5
+        })];
         this.resize();
 
         this.pixi.renderer.on("resize", this.resize.bind(this));

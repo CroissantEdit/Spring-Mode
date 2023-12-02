@@ -101,6 +101,86 @@ export const Guns: GunDefinition[] = [
         }
     },
     {
+        idString: "poop_gun",
+        name: "poop Gun",
+        itemType: ItemType.Gun,
+        ammoType: "762mm",
+        ammoSpawnAmount: 290,
+        capacity: 200,
+        reloadTime: 3.4,
+        fireDelay: 55,
+        switchDelay: 400,
+        speedMultiplier: 0.0001,
+        recoilMultiplier: 0.65,
+        recoilDuration: 200,
+        fireMode: FireMode.Auto,
+        shotSpread: 2,
+        moveSpread: 4,
+        length: 11.8,
+        fists: {
+            left: v(140, -10),
+            right: v(40, 0),
+            rightZIndex: 4,
+            animationDuration: 100
+        },
+        
+        image: { position: v(120, 0) },
+        casingParticles: {
+            position: v(4.7, 1.6)
+        },
+        ballistics: {
+            damage: 10,
+            obstacleMultiplier: 2.5,
+            speed: 0.3,
+            range: 180,
+            tracer: {
+                width: 1.1,
+                length: 1.4
+            }
+        }
+    },
+    {
+        idString: "saiga_12",
+        name: "saiga_12",
+        itemType: ItemType.Gun,
+        ammoType: "12g",
+        ammoSpawnAmount: 15,
+        capacity: 5,
+        reloadTime: 2.5,
+        fireDelay: 500,
+        switchDelay: 925,
+        speedMultiplier: 0.92,
+        recoilMultiplier: 0.5,
+        recoilDuration: 550,
+        fireMode: FireMode.Single,
+        shotSpread: 10,
+        moveSpread: 12,
+        jitterRadius: 1.25,
+        bulletCount: 10,
+        length: 7.9,
+        fists: {
+            left: v(122, -3),
+            right: v(45, 0),
+            rightZIndex: 4,
+            animationDuration: 100
+        },
+        image: { position: v(95, 0) },
+        casingParticles: {
+            position: v(4.5, 0.6),
+            ejectionDelay: 450
+        },
+        singleReload: false,
+        ballistics: {
+            damage: 12.5,
+            obstacleMultiplier: 1,
+            speed: 0.16,
+            range: 48,
+            tracer: {
+                length: 0.7
+            }
+        }
+    },
+    {
         idString: "arx160",
         name: "ARX-160",
         itemType: ItemType.Gun,

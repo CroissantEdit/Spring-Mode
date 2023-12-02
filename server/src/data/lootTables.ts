@@ -30,6 +30,7 @@ export const LootTables: Record<string, LootTable> = {
             { tier: "ammo", weight: 1 },
             { tier: "guns", weight: 0.9 }
         ]
+
     },
     regular_crate: {
         min: 1,
@@ -43,6 +44,25 @@ export const LootTables: Record<string, LootTable> = {
             { tier: "melee", weight: 0.04 }
         ]
     },
+    flower_pot: {
+        min: 1,
+        max: 1,
+        loot: [  
+            { tier: "special_guns", weight: 1 },
+            { tier: "special_healing_items", weight: 0.15 },
+            { tier: "special_equipment", weight: 0.65 },
+            { tier: "special_scopes", weight: 0.3 },
+            { item: "saiga_12", weight: 0.0001 },
+        ]
+    },
+    katana_crate: {
+        min: 1,
+        max: 1,
+        loot: [
+            { item: "katana", weight: 1 }
+        ]  
+    },
+    
     aegis_crate: {
         min: 3,
         max: 5,
@@ -51,6 +71,17 @@ export const LootTables: Record<string, LootTable> = {
             { tier: "special_healing_items", weight: 0.15 },
             { tier: "special_equipment", weight: 0.65 },
             { tier: "special_scopes", weight: 0.3 }
+        ]
+    },
+    cherry_blossom_tree: {
+        min: 4,
+        max: 5,
+        loot: [
+            { tier: "guns", weight: 1.25 },
+            { tier: "healing_items", weight: 1 },
+            { tier: "equipment", weight: 0.9 },
+            { tier: "special_guns", weight: 0.8 },
+            { tier: "special_scopes", weight: 0.35 }
         ]
     },
     flint_crate: {
@@ -322,6 +353,8 @@ export const LootTiers: Record<string, WeightedItem[]> = {
         { item: "aug", weight: 0.7 },
         { item: "m3k", weight: 0.3 },
         { item: "m16a4", weight: 0.1 },
+        { item: "poop_gun", weight: 1 },
+        { item: "saiga_12", weight: 999999 },
         { item: "arx160", weight: 0.1 },
         { item: "flues", weight: 0.1 },
         { item: "lewis_gun", weight: 0.05 },
@@ -417,7 +450,9 @@ export const LootTiers: Record<string, WeightedItem[]> = {
     ],
     melee: [
         { item: "baseball_bat", weight: 4 },
-        { item: "kbar", weight: 2 }
+        { item: "kbar", weight: 2 },
+        { item: "katana", weight: 0 },
+        { item: "boomerang", weight: 2.5 },
     ],
     airdrop_equipment: [
         { item: "tactical_helmet", weight: 1 },

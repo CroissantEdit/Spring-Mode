@@ -82,6 +82,66 @@ export const Melees: MeleeDefinition[] = [
         }
     },
     {
+        idString: "boomerang",
+        name: "boomerang",
+        itemType: ItemType.Melee,
+        damage: 35,
+        obstacleMultiplier: 2,
+        piercingMultiplier: 1,
+        radius: 2.7,
+        offset: v(4.9, -1),
+        cooldown: 350,
+        speedMultiplier: 1,
+        maxTargets: 1,
+        fists: {
+            animationDuration: 150,
+            randomFist: false,
+            left: v(0, 40),
+            right: v(-30, 35),
+            useLeft: v(50, 30), 
+            useRight: v(20, 35)
+        },
+        image: {
+            position: v(55, 30),
+            usePosition: v(95, 30),
+            angle: 45, 
+            useAngle: 360,
+            // if you make angle and useangle to 0, you can make a spear lmfao
+            // if you turn the use angle to 360, it will become a boomerang
+            lootScale: .360
+        }
+    },
+    {
+        idString: "katana",
+        name: "katana",
+        itemType: ItemType.Melee,
+        damage: 35,
+        obstacleMultiplier: 2,
+        piercingMultiplier: 1,
+        radius: 2.7,
+        offset: v(4.9, -1),
+        cooldown: 350,
+        speedMultiplier: 1,
+        maxTargets: 1,
+        fists: {
+            animationDuration: 150,
+            randomFist: false,
+            left: v(0, 40),
+            right: v(-30, 35),
+            useLeft: v(50, 30), 
+            useRight: v(20, 35)
+        },
+        image: {
+            position: v(55, 30),
+            usePosition: v(95, 30),
+            angle: 45, 
+            useAngle: 45,
+            // if you make angle and useangle to 0, you can make a spear lmfao
+            // if you turn the use angle to 360, it will become a boomerang
+            lootScale: .85
+        }
+    },
+    {
         idString: "kbar",
         name: "K-bar",
         itemType: ItemType.Melee,

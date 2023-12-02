@@ -16,19 +16,23 @@ export const HITBOX_COLORS = {
     playerWeapon: new Color("lime")
 };
 
-// Converts the strings in the mode definition to Color objects
-export const COLORS = (Object.keys(MODE.colors) as ColorKeys[])
-    .reduce(
-        (result, key) => {
-            result[key] = new Color(MODE.colors[key]);
-            return result;
-        },
-        // eslint-disable-next-line @typescript-eslint/prefer-reduce-type-parameter, @typescript-eslint/consistent-type-assertions
-        {} as Record<ColorKeys, Color>
-    );
+export const COLORS = {
+    grass: new Color("hsl(81, 60%, 42%)"),
+    water: new Color("hsl(200, 55%, 43%)"),
+    border: new Color("hsl(211, 63%, 30%)"),
+    beach: new Color("hsl(36, 89%, 62%)"),
+    riverBank: new Color("hsl(0, 0%, 54%)"),
+    gas: new Color("hsl(17, 100%, 50%)").setAlpha(0.55)
+};
 
+export const BULLET_COLORS: Record<string, number> = {
+    "9mm": 0xffff80,
+    "12g": 0xffc8c8,
+    "556mm": 0x80ff80,
+    "762mm": 0x80ffff,
+    shrapnel: 0x1d1d1d
+};
 export const GHILLIE_TINT = COLORS.grass.multiply(new Color("hsl(0, 0%, 99%)"));
-
 export const PIXI_SCALE = 20;
 
 export const FIRST_EMOTE_ANGLE = Math.atan2(-1, -1);
