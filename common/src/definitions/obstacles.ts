@@ -291,6 +291,46 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             }
         },
         {
+            idString: "glass_wall_1",
+            name: "glass wall",
+            material: "glass",
+            health: 250,
+            indestructible: false,
+            hideOnMap: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.95
+            },
+            hitbox: RectangleHitbox.fromRect(25, 1.7),
+            rotationMode: RotationMode.Limited,
+            reflectBullets: false,
+            noResidue: true,
+            frames: {
+                particle: "metal_particle"
+            }
+        },
+        {
+            idString: "glass_wall_2",
+            name: "glass wall",
+            material: "glass",
+            health: 250,
+            indestructible: false,
+            hideOnMap: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.95
+            },
+            hitbox: RectangleHitbox.fromRect(21.7, 1.7),
+            rotationMode: RotationMode.Limited,
+            reflectBullets: false,
+            noResidue: true,
+            frames: {
+                particle: "metal_particle"
+            }
+        },
+        {
             idString: "japan_wall_1",
             name: "Japan Wall",
             material: "wood",
@@ -986,6 +1026,26 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             }
         },
         {
+            idString: "glass_door",
+            name: "glass_door",
+            material: "glass",
+            health: 120,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 1
+            },
+            hitbox: RectangleHitbox.fromRect(10.15, 1.6, v(-0.44, 0)),
+            rotationMode: RotationMode.Limited,
+            noResidue: true,
+            role: ObstacleSpecialRoles.Door,
+            hingeOffset: v(-4.5, 0),
+            zIndex: ZIndexes.ObstaclesLayer3,
+            frames: {
+                particle: "furniture_particle"
+            }
+        },
+        {
             idString: "vault_door",
             name: "Vault Door",
             material: "metal",
@@ -1052,6 +1112,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 residue: "toilet_residue"
             }
         },
+       
         {
             idString: "small_drawer",
             name: "Small Drawer",
@@ -1081,6 +1142,98 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             },
             hideOnMap: true,
             hitbox: RectangleHitbox.fromRect(12.5, 6, v(0, -0.5)),
+            rotationMode: RotationMode.Limited,
+            hasLoot: true,
+            frames: {
+                particle: "furniture_particle"
+            }
+        },
+        {
+            idString: "black_house",
+            name: "black_house",
+            material: "wood",
+            health: 80,
+            indestructible: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.8
+            },
+            hideOnMap: true,
+            hitbox: RectangleHitbox.fromRect(13.5, 9,),
+            rotationMode: RotationMode.Limited,
+            hasLoot: false,
+            reflectBullets: true,
+            frames: {
+                particle: "furniture_particle"
+            }
+        },
+        {
+            idString: "flower_garden",
+            name: "flower_garden",
+            material: "wood",
+            health: 100,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.9
+            },
+            hideOnMap: true,
+            hitbox: RectangleHitbox.fromRect(10, 17.2,),
+            rotationMode: RotationMode.Limited,
+            hasLoot: true,
+            frames: {
+                particle: "furniture_particle"
+            }
+        },
+        {
+            idString: "flower_garden_2",
+            name: "flower_garden_2",
+            material: "wood",
+            health: 100,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.9
+            },
+            hideOnMap: true,
+            hitbox: RectangleHitbox.fromRect(10, 17.2,),
+            rotationMode: RotationMode.Limited,
+            hasLoot: true,
+            frames: {
+                particle: "furniture_particle"
+            }
+        },
+        {
+            idString: "flower_garden_3",
+            name: "flower_garden_3",
+            material: "wood",
+            health: 100,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.9
+            },
+            hideOnMap: true,
+            hitbox: RectangleHitbox.fromRect(10, 17.2,),
+            rotationMode: RotationMode.Limited,
+            hasLoot: true,
+            frames: {
+                particle: "furniture_particle"
+            }
+        },
+        {
+            idString: "flower_garden_4",
+            name: "flower_garden_4",
+            material: "wood",
+            health: 100,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.9
+            },
+            hideOnMap: true,
+            hitbox: RectangleHitbox.fromRect(10, 17.2,),
             rotationMode: RotationMode.Limited,
             hasLoot: true,
             frames: {

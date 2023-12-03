@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="79.232025mm"
+   height="54.665455mm"
+   viewBox="0 0 79.232025 54.665455"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="black_house.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#4a3829;fill-opacity:1;stroke:#0f0808;stroke-width:3;stroke-linecap:round;stroke-miterlimit:5;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 17.707597,17.68576 c 13.42443,0 40.2733,0 40.2733,0 v 19.20151 h -40.14861 z"
+       id="path4" />
+    <path
+       id="path6"
+       style="fill:#3d2c22;fill-opacity:1;stroke:#0f0808;stroke-width:3;stroke-linecap:round;stroke-miterlimit:5;stroke-opacity:1;paint-order:fill markers stroke"
+       d="M 4.8557071,4.8662 5.0427771,49.81488 18.072467,36.7857 V 17.83337 Z" />
+    <path
+       style="fill:#3d2c22;fill-opacity:1;stroke:#0f0808;stroke-width:2.89551;stroke-linecap:round;stroke-miterlimit:5;stroke-opacity:1;paint-order:fill markers stroke"
+       d="M 6.7518171,3.26282 H 72.819867 l -14.38093,14.38093 h -37.72739 z"
+       id="path7" />
+    <path
+       style="fill:#3d2c22;fill-opacity:1;stroke:#0f0808;stroke-width:2.89551;stroke-linecap:round;stroke-miterlimit:5;stroke-opacity:1;paint-order:fill markers stroke"
+       d="M 72.892027,51.51048 H 6.8239771 L 21.204907,37.12963 h 37.72739 z"
+       id="path8" />
+    <rect
+       style="fill:#4a3829;fill-opacity:1;stroke:#0f0808;stroke-width:2.959;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:5;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect8"
+       width="5.2000489"
+       height="51.152599"
+       x="1.4795001"
+       y="1.6895676" />
+    <path
+       style="fill:#4a3829;fill-opacity:1;stroke:#0f0808;stroke-width:1.92912;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:5;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       d="M 75.696647,2.4145 V 52.26611 L 58.575667,35.14512 V 19.24223 Z"
+       id="path10"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="path9"
+       style="fill:#7e604a;fill-opacity:1;stroke:#0f0808;stroke-width:2.13758;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:5;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 74.479777,11.8731 a 11.707247,15.553099 0 0 0 -11.70727,15.55322 11.707247,15.553099 0 0 0 11.70727,15.55323 11.707247,15.553099 0 0 0 1.06444,-0.10144 V 11.93873 a 11.707247,15.553099 0 0 0 -1.06444,-0.0656 z" />
+    <rect
+       style="fill:#7e604a;fill-opacity:1;stroke:#0f0808;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:5;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect10"
+       width="3.4611404"
+       height="52.665459"
+       x="74.770889"
+       y="1" />
+  </g>
+</svg>

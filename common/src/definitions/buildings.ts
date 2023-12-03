@@ -2040,4 +2040,150 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
             }
         ],
     },
+    {
+        idString: "greenhouse",
+        name: "greenhouse",
+        spawnHitbox: RectangleHitbox.fromRect(60, 88),
+        ceilingHitbox: RectangleHitbox.fromRect(40, 80),
+        scopeHitbox: RectangleHitbox.fromRect(40, 70),
+        floorImages: [{
+            key: "green_house_floor",
+            position: v(0, 0)
+        }],
+        ceilingImages: [{
+            key: "green_house_roof",
+            position: v(0, 0)
+        }],
+        floors: [
+            {
+                type: "stone",
+                hitbox: RectangleHitbox.fromRect(40, 88)
+            }
+        ],
+        obstacles: [
+            {
+                idString: "glass_wall_1", // 2 is the longer side with no door
+                position: v(16.3, 43.4),
+                rotation: 2
+            },
+            {
+                idString: "glass_wall_1", 
+                position: v(-16.3, 43.4),
+                rotation: 2
+            },
+            {
+                idString: "glass_wall_1", // 2 is the longer side with no door
+                position: v(16.3, -43.4),
+                rotation: 2
+            },
+            {
+                idString: "glass_wall_1", 
+                position: v(-16.3, -43.4),
+                rotation: 2
+            },
+            {
+                idString: "glass_wall_2", 
+                position: v(27.94, 32.0),
+                rotation: 1
+            },
+            {
+                idString: "glass_wall_2", 
+                position: v(27.94, 10.6),
+                rotation: 1
+            },
+            {
+                idString: "glass_wall_2", 
+                position: v(27.94, -32.0),
+                rotation: 1
+            },
+            {
+                idString: "glass_wall_2", 
+                position: v(27.94, -10.7),
+                rotation: 1
+            },
+            {
+                idString: "glass_wall_2", 
+                position: v(-27.94, 32.0),
+                rotation: 1
+            },
+            {
+                idString: "glass_wall_2", 
+                position: v(-27.94, 10.6),
+                rotation: 1
+            },
+            {
+                idString: "glass_wall_2", 
+                position: v(-27.94, -32.0),
+                rotation: 1
+            },
+            {
+                idString: "glass_wall_2", 
+                position: v(-27.94, -10.7),
+                rotation: 1
+            },
+            {
+                idString: "glass_door", 
+                position: v(0, -43.4),
+                rotation: 2
+            },
+            {
+                idString: "glass_door", 
+                position: v(0, 43.4),
+                rotation: 4
+            },
+            {
+                idString: { flower_garden_2: .25, flower_garden: .25, flower_garden_3: .25,flower_garden_4: .25,},
+                position: v(15, -10),
+                rotation: 1
+
+            },
+            {
+                idString: { flower_garden_2: .25, flower_garden: .25, flower_garden_3: .25,flower_garden_4: .25,},
+                position: v(15, -23),
+                rotation: 1
+            },
+            {
+                idString: { flower_garden_2: .25, flower_garden: .25, flower_garden_3: .25,flower_garden_4: .25,},
+                position: v(15, -36),
+                rotation: 1
+            },
+            {
+                idString: { flower_garden_2: .25, flower_garden: .25, flower_garden_3: .25,flower_garden_4: .25,},
+                position: v(10.5, 33),
+                rotation: 2
+            },
+            {
+                idString: { flower_garden_2: .25, flower_garden: .25, flower_garden_3: .25,flower_garden_4: .25,},
+                position: v(-10.5, 33),
+                rotation: 2
+            },
+            {
+                idString: { flower_garden_2: .25, flower_garden: .25, flower_garden_3: .25,flower_garden_4: .25,},
+                position: v(-10.5, 12.9),
+                rotation: 2
+            },
+            {
+                idString: { flower_garden_2: .25, flower_garden: .25, flower_garden_3: .25,flower_garden_4: .25,},
+                position: v(-15, -31),
+                rotation: 1
+            },
+            {
+                idString: { flower_garden_2: .25, flower_garden: .25, flower_garden_3: .25,flower_garden_4: .25,},
+                position: v(-15, -15.8),
+                rotation: 1
+            },
+            {
+                idString: "black_house", 
+                position: v(21.65, 34.8),
+                rotation: 1
+            },
+        ],
+
+        lootSpawners: [
+            {
+                position: v(0, 0),
+                table: "warehouse"
+            }
+        ],
+    },
 ]);

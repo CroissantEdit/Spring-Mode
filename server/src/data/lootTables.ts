@@ -44,6 +44,54 @@ export const LootTables: Record<string, LootTable> = {
             { tier: "melee", weight: 0.04 }
         ]
     },
+    flower_garden: {
+        min: 1,
+        max: 1,
+        loot: [
+            { tier: "guns", weight: 1.25 },
+            { tier: "equipment", weight: 1 },
+            { tier: "scopes", weight: 0.3 },
+            { tier: "healing_items", weight: 1 },
+            { tier: "ammo", weight: 0.5 },
+            { tier: "melee", weight: 0.04 }
+        ]
+    },
+    flower_garden_2: {
+        min: 1,
+        max: 1,
+        loot: [
+            { tier: "guns", weight: 1.25 },
+            { tier: "equipment", weight: 1 },
+            { tier: "scopes", weight: 0.3 },
+            { tier: "healing_items", weight: 1 },
+            { tier: "ammo", weight: 0.5 },
+            { tier: "melee", weight: 0.04 }
+        ]
+    },
+    flower_garden_3: {
+        min: 1,
+        max: 1,
+        loot: [
+            { tier: "guns", weight: 1.25 },
+            { tier: "equipment", weight: 1 },
+            { tier: "scopes", weight: 0.3 },
+            { tier: "healing_items", weight: 1 },
+            { tier: "ammo", weight: 0.5 },
+            { tier: "melee", weight: 0.04 }
+        ]
+    },
+    flower_garden_4: {
+        min: 1,
+        max: 1,
+        loot: [
+            { tier: "guns", weight: 1.25 },
+            { tier: "equipment", weight: 1 },
+            { tier: "scopes", weight: 0.3 },
+            { tier: "healing_items", weight: 1 },
+            { tier: "ammo", weight: 0.5 },
+            { tier: "melee", weight: 0.04 }
+        ]
+    },
     flower_pot: {
         min: 1,
         max: 1,
