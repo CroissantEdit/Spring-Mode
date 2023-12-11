@@ -441,10 +441,10 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             spawnMode: MapObjectSpawnMode.RiverBank,
             zIndex: ZIndexes.ObstaclesLayer4
         },
-          {
+        {
             idString: "flower", //this is pink
             name: "flower",
-            material: "stone",
+            material: "bush",
             health: 100,
             indestructible: true,
             scale: {
@@ -453,14 +453,14 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 destroy: 0.9
             },
             hideOnMap: true,
-            hitbox: RectangleHitbox.fromRect(8.3, 12.2),
+            hitbox: new CircleHitbox(2.0),
             rotationMode: RotationMode.Limited,
             noCollisions: true
         },
         {
             idString: "pink_flower", // why the fuck did i name it pink_flower is a fucking petal
             name: "pink_flower",
-            material: "stone",
+            material: "bush",
             health: 100,
             indestructible: true,
             scale: {
@@ -469,14 +469,14 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 destroy: 0.9
             },
             hideOnMap: true,
-            hitbox: RectangleHitbox.fromRect(8.3, 12.2),
+            hitbox: new CircleHitbox(1.5),
             rotationMode: RotationMode.Limited,
             noCollisions: true
         },
         {
             idString: "flower_group_white",
             name: "flower_group_white",
-            material: "stone",
+            material: "bush",
             health: 100,
             indestructible: true,
             scale: {
@@ -485,7 +485,23 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 destroy: 0.9
             },
             hideOnMap: true,
-            hitbox: RectangleHitbox.fromRect(8.3, 12.2),
+            hitbox: new CircleHitbox(2.4),
+            rotationMode: RotationMode.Limited,
+            noCollisions: true
+        },
+        {
+            idString: "flower_white",
+            name: "flower_white",
+            material: "bush",
+            health: 100,
+            indestructible: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.9
+            },
+            hideOnMap: true,
+            hitbox: new CircleHitbox(2.0),
             rotationMode: RotationMode.Limited,
             noCollisions: true
         },
@@ -504,22 +520,6 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             spawnHitbox: new CircleHitbox(4),
             rotationMode: RotationMode.Full,
             zIndex: ZIndexes.ObstaclesLayer3
-        },
-        {
-            idString: "flower_white",
-            name: "flower_white",
-            material: "stone",
-            health: 100,
-            indestructible: true,
-            scale: {
-                spawnMin: 1,
-                spawnMax: 1,
-                destroy: 0.9
-            },
-            hideOnMap: true,
-            hitbox: RectangleHitbox.fromRect(8.3, 12.2),
-            rotationMode: RotationMode.Limited,
-            noCollisions: true
         },
         {
             idString: "bank_birch_tree",
