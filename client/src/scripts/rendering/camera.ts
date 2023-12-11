@@ -36,9 +36,9 @@ export class Camera {
         this.container.sortableChildren = true;
         this.pixi.stage.addChild(this.container);
         this.container.filters = [new AdvancedBloomFilter({
-            threshold: .1,
-            bloomScale: .77,
-            brightness: .5,
+            threshold: 0.1,
+            bloomScale: 0.6,
+            brightness: 0.5,
             blur: 2,
             quality: 5
         })];
