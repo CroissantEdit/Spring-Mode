@@ -1,5 +1,10 @@
 import { FireMode } from "../constants";
-import { type BaseBulletDefinition, type ItemDefinition, ItemType, type ReferenceTo } from "../utils/objectDefinitions";
+import {
+    type BaseBulletDefinition,
+    type ItemDefinition,
+    ItemType,
+    type ReferenceTo
+} from "../utils/objectDefinitions";
 import { v, type Vector } from "../utils/vector";
 import { type AmmoDefinition } from "./ammos";
 
@@ -54,16 +59,19 @@ export type GunDefinition = ItemDefinition & {
 
     readonly noMuzzleFlash?: boolean
     readonly ballistics: BaseBulletDefinition
-} & ({
-    readonly fireMode: FireMode.Auto | FireMode.Single
-} | {
-    readonly fireMode: FireMode.Burst
-    readonly burstProperties: {
-        readonly shotsPerBurst: number
-        readonly burstCooldown: number
-        // note: the time between bursts is burstCooldown, and the time between shots within a burst is cooldown
+} & (
+    | {
+        readonly fireMode: FireMode.Auto | FireMode.Single
     }
-});
+    | {
+        readonly fireMode: FireMode.Burst
+        readonly burstProperties: {
+            readonly shotsPerBurst: number
+            readonly burstCooldown: number
+            // note: the time between bursts is burstCooldown, and the time between shots within a burst is cooldown
+        }
+    }
+);
 
 export const Guns: GunDefinition[] = [
     {
@@ -123,7 +131,7 @@ export const Guns: GunDefinition[] = [
             rightZIndex: 4,
             animationDuration: 100
         },
-        
+
         image: { position: v(120, 0) },
         casingParticles: {
             position: v(4.7, 1.6)
@@ -1196,7 +1204,7 @@ export const Guns: GunDefinition[] = [
             tracer: {
                 width: 0.7,
                 opacity: 0.85,
-                color: 0xFF8000
+                color: 0xff8000
             }
         }
     },
