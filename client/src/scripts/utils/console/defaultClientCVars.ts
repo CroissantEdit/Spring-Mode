@@ -24,6 +24,7 @@ export interface CVarTypeMapping {
     readonly cv_language: ConVar<string>
     readonly cv_region: ConVar<string | undefined>
     readonly cv_camera_shake_fx: ConVar<boolean>
+    readonly cv_bloom: ConVar<boolean>
     readonly cv_killfeed_style: ConVar<"text" | "icon">
     readonly cv_movement_smoothing: ConVar<boolean>
     readonly cv_responsive_rotation: ConVar<boolean>
@@ -78,6 +79,7 @@ export const defaultClientCVars: SimpleCVarMapping = Object.freeze({
     cv_use_old_menu_music: false,
     cv_region: undefined,
     cv_camera_shake_fx: true,
+    cv_bloom: true,
     cv_killfeed_style: "text",
     cv_movement_smoothing: true,
     cv_responsive_rotation: true,
