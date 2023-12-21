@@ -149,7 +149,7 @@ export const Guns: GunDefinition[] = [
     },
     {
         idString: "saiga_12",
-        name: "saiga_12",
+        name: "Saiga 12",
         itemType: ItemType.Gun,
         ammoType: "12g",
         ammoSpawnAmount: 15,
@@ -160,7 +160,7 @@ export const Guns: GunDefinition[] = [
         speedMultiplier: 0.92,
         recoilMultiplier: 0.5,
         recoilDuration: 550,
-        fireMode: FireMode.Single,
+        fireMode: FireMode.Auto,
         shotSpread: 10,
         moveSpread: 12,
         jitterRadius: 1.25,
