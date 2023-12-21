@@ -98,17 +98,17 @@ export const Melees: MeleeDefinition[] = [
             randomFist: false,
             left: v(0, 40),
             right: v(-30, 35),
-            useLeft: v(50, 30), 
+            useLeft: v(50, 30),
             useRight: v(20, 35)
         },
         image: {
             position: v(55, 30),
             usePosition: v(95, 30),
-            angle: 45, 
+            angle: 45,
             useAngle: 360,
             // if you make angle and useangle to 0, you can make a spear lmfao
             // if you turn the use angle to 360, it will become a boomerang
-            lootScale: .360
+            lootScale: 0.360
         }
     },
     {
@@ -128,17 +128,17 @@ export const Melees: MeleeDefinition[] = [
             randomFist: false,
             left: v(0, 40),
             right: v(-30, 35),
-            useLeft: v(50, 30), 
+            useLeft: v(50, 30),
             useRight: v(20, 35)
         },
         image: {
             position: v(55, 30),
             usePosition: v(95, 30),
-            angle: 45, 
+            angle: 45,
             useAngle: 45,
             // if you make angle and useangle to 0, you can make a spear lmfao
             // if you turn the use angle to 360, it will become a boomerang
-            lootScale: .85
+            lootScale: 0.85
         }
     },
     {

@@ -121,12 +121,12 @@ export const LootTables: Record<string, LootTable> = {
     flower_pot: {
         min: 1,
         max: 1,
-        loot: [  
+        loot: [
             { tier: "special_guns", weight: 1 },
             { tier: "special_healing_items", weight: 0.15 },
             { tier: "special_equipment", weight: 0.65 },
             { tier: "special_scopes", weight: 0.3 },
-            { item: "saiga_12", weight: 0.0001 },
+            { item: "saiga_12", weight: 0.0001 }
         ]
     },
     katana_crate: {
@@ -134,9 +134,9 @@ export const LootTables: Record<string, LootTable> = {
         max: 1,
         loot: [
             { item: "katana", weight: 1 }
-        ]  
+        ]
     },
-    
+
     aegis_crate: {
         min: 3,
         max: 5,
@@ -526,7 +526,7 @@ export const LootTiers: Record<string, WeightedItem[]> = {
         { item: "baseball_bat", weight: 4 },
         { item: "kbar", weight: 2 },
         { item: "katana", weight: 0 },
-        { item: "boomerang", weight: 2.5 },
+        { item: "boomerang", weight: 2.5 }
     ],
     airdrop_equipment: [
         { item: "tactical_helmet", weight: 1 },

@@ -446,6 +446,9 @@ Video evidence is required.`)) {
     // Camera shake
     addCheckboxListener("#toggle-camera-shake", "cv_camera_shake_fx");
 
+    // Bloom
+    addCheckboxListener("#toggle-bloom", "cv_bloom");
+    
     // FPS toggle
     addCheckboxListener("#toggle-fps", "pf_show_fps", (value: boolean) => {
         $("#fps-counter").toggle(value);

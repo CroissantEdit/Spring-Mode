@@ -64,7 +64,7 @@
     top: 10px;
     left: 10px;
 
-    &>div {
+    & > div {
         margin-bottom: 10px;
     }
 
@@ -72,7 +72,7 @@
         top: 5px;
         left: 5px;
 
-        &>div {
+        & > div {
             margin-bottom: 5px;
         }
     }
@@ -184,7 +184,6 @@
             font-size: 15px;
         }*/
     }
-
 }
 
 .ui-leaderboard {
@@ -347,7 +346,7 @@
     @include text-shadow;
 }
 
-#interact-key.active+#interact-text {
+#interact-key.active + #interact-text {
     position: relative;
     top: 3px;
 }
@@ -485,7 +484,7 @@
     }
 
     .flashing {
-        animation: 0.5s ease-in-out 0.5s infinite flashing
+        animation: 0.5s ease-in-out 0.5s infinite flashing;
     }
 
     @keyframes flashing {
@@ -501,7 +500,6 @@
             background-color: #000000;
         }
     }
-
 }
 
 #adrenaline-bar-container {
@@ -625,7 +623,7 @@
     flex-wrap: wrap;
 
     @media screen and (max-width: $screen_large) {
-        &>button {
+        & > button {
             height: fit-content;
             padding: 8px 12px;
             font-size: 14px;
@@ -815,22 +813,12 @@
 
 #weapons-container {
     position: absolute;
-    bottom: 10vw;
     right: 1vw;
     flex-direction: column;
 
-    @media screen and (view-width: $screen_large) {
-        bottom: 5px;
-        right: 5px;
-    }
-
-    @media screen and (max-width: $screen_medium) {
-        right: 3px;
-        top: 50%;
-        transform: translateY(-50%);
-        flex-direction: column;
-        height: fit-content;
-    }
+    top: 50%;
+    transform: translateY(-50%);
+    height: fit-content;
 
     .item-image {
         width: 90px;
@@ -852,7 +840,11 @@
 
         &.has-item {
             opacity: 1;
-            background: radial-gradient(circle, $light_transparent_bg 0%, $transparent_bg 100%);
+            background: radial-gradient(
+                circle,
+                $light_transparent_bg 0%,
+                $transparent_bg 100%
+            );
         }
     }
 }
@@ -860,21 +852,15 @@
 #items-container {
     position: absolute;
     bottom: 7.2vw;
-    left: 16.5vw;
+    left: 0;
+    right: 0;
+    // transform: translateX(25%);
+    margin: 0 auto;
     display: flex;
     gap: 5px;
     flex-direction: row;
-
-
-    @media screen and (max-width: $screen_large) {
-        bottom: 90px;
-        left: 220px;
-        gap: 3px;
-    }
-
-    @media screen and (max-width: $screen_small) {
-        flex-direction: row-reverse;
-    }
+    width: 100vw;
+    justify-content: center;
 
     .item-slot {
         height: 40px;
@@ -977,7 +963,11 @@
         height: 78px;
 
         &.has-item {
-            background: radial-gradient(circle, $light_transparent_bg 0%, $transparent_bg 100%);
+            background: radial-gradient(
+                circle,
+                $light_transparent_bg 0%,
+                $transparent_bg 100%
+            );
         }
 
         .item-tooltip {
@@ -1100,7 +1090,7 @@
     //noinspection CssUnknownTarget
     background-image: url("/img/misc/emote_wheel.svg");
 
-    &>div {
+    & > div {
         width: 84px;
         height: 84px;
         position: absolute;
