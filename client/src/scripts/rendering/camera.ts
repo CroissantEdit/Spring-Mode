@@ -35,13 +35,14 @@ export class Camera {
         this.container = new Container();
         this.container.sortableChildren = true;
         this.pixi.stage.addChild(this.container);
-        this.container.filters = [new AdvancedBloomFilter({
+        if (game.console.getBuiltInCVar("cv_bloom")) {
+            this.container.filters = [new AdvancedBloomFilter({
             threshold: 0.1,
             bloomScale: 0.6,
             brightness: 0.5,
             blur: 2,
             quality: 5
-        })];
+        })]};
         this.resize();
 
         this.pixi.renderer.on("resize", this.resize.bind(this));
