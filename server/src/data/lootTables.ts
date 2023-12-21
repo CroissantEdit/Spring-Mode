@@ -1,16 +1,14 @@
 import { type LootDefinition } from "../../../common/src/definitions/loots";
 import { type ReferenceTo } from "../../../common/src/utils/objectDefinitions";
 
-export type WeightedItem =
-    (
-        { readonly item: ReferenceTo<LootDefinition> | null } |
-        { readonly tier: string }
-    ) &
-    {
-        readonly count?: number
-        readonly spawnSeparately?: boolean
-        readonly weight: number
-    };
+export type WeightedItem = (
+    | { readonly item: ReferenceTo<LootDefinition> | null }
+    | { readonly tier: string }
+) & {
+    readonly count?: number
+    readonly spawnSeparately?: boolean
+    readonly weight: number
+};
 
 export interface LootTable {
     readonly min: number
@@ -30,7 +28,6 @@ export const LootTables: Record<string, LootTable> = {
             { tier: "ammo", weight: 1 },
             { tier: "guns", weight: 0.9 }
         ]
-
     },
     regular_crate: {
         min: 1,
@@ -50,11 +47,11 @@ export const LootTables: Record<string, LootTable> = {
         loot: [
             { item: "aug", weight: 0.7 },
             { item: "flues", weight: 0.4 },
-            { item: "ak47", weight: 0.8},
+            { item: "ak47", weight: 0.8 },
             { item: "arx160", weight: 0.3 },
             { item: "mini14", weight: 0.5 },
             { item: "sr25", weight: 0.2 },
-            { item: "stoner_63", weight: 0.01 },
+            { item: "stoner_63", weight: 0.01 }
         ]
     },
     treasure_viking_chest: {
@@ -63,11 +60,11 @@ export const LootTables: Record<string, LootTable> = {
         loot: [
             { item: "aug", weight: 0.7 },
             { item: "flues", weight: 0.4 },
-            { item: "ak47", weight: 0.8},
+            { item: "ak47", weight: 0.8 },
             { item: "arx160", weight: 0.3 },
             { item: "mini14", weight: 0.5 },
             { item: "sr25", weight: 0.2 },
-            { item: "stoner_63", weight: 0.01 },
+            { item: "stoner_63", weight: 0.01 }
         ]
     },
     flower_garden: {
@@ -132,9 +129,7 @@ export const LootTables: Record<string, LootTable> = {
     katana_crate: {
         min: 1,
         max: 1,
-        loot: [
-            { item: "katana", weight: 1 }
-        ]
+        loot: [{ item: "katana", weight: 1 }]
     },
 
     aegis_crate: {
@@ -171,9 +166,7 @@ export const LootTables: Record<string, LootTable> = {
     melee_crate: {
         min: 2,
         max: 2,
-        loot: [
-            { tier: "melee", weight: 1 }
-        ]
+        loot: [{ tier: "melee", weight: 1 }]
     },
     tango_crate: {
         min: 1,
@@ -186,19 +179,37 @@ export const LootTables: Record<string, LootTable> = {
             ],
             [
                 { item: "tango_51", spawnSeparately: true, weight: 60 },
-                { item: "tango_51", spawnSeparately: true, count: 2, weight: 30 },
-                { item: "tango_51", spawnSeparately: true, count: 3, weight: 3.5 },
-                { item: "tango_51", spawnSeparately: true, count: 4, weight: 0.1 },
-                { item: "tango_51", spawnSeparately: true, count: 5, weight: 0.0000001 }
+                {
+                    item: "tango_51",
+                    spawnSeparately: true,
+                    count: 2,
+                    weight: 30
+                },
+                {
+                    item: "tango_51",
+                    spawnSeparately: true,
+                    count: 3,
+                    weight: 3.5
+                },
+                {
+                    item: "tango_51",
+                    spawnSeparately: true,
+                    count: 4,
+                    weight: 0.1
+                },
+                {
+                    item: "tango_51",
+                    spawnSeparately: true,
+                    count: 5,
+                    weight: 0.0000001
+                }
             ]
         ]
     },
     gold_rock: {
         min: 1,
         max: 1,
-        loot: [
-            { item: "mosin", weight: 1 }
-        ]
+        loot: [{ item: "mosin", weight: 1 }]
     },
     pumpkin: {
         min: 1,
@@ -275,9 +286,7 @@ export const LootTables: Record<string, LootTable> = {
     fridge: {
         min: 2,
         max: 3,
-        loot: [
-            { item: "cola", weight: 1 }
-        ]
+        loot: [{ item: "cola", weight: 1 }]
     },
     washing_machine: {
         min: 1,
@@ -330,76 +339,42 @@ export const LootTables: Record<string, LootTable> = {
     gun_mount_mcx_spear: {
         min: 1,
         max: 1,
-        loot: [
-            { item: "mcx_spear", weight: 1 }
-        ]
+        loot: [{ item: "mcx_spear", weight: 1 }]
     },
     gun_mount_stoner_63: {
         min: 1,
         max: 1,
-        loot: [
-            { item: "stoner_63", weight: 1 }
-        ]
+        loot: [{ item: "stoner_63", weight: 1 }]
     },
     gas_can: {
         min: 1,
         max: 1,
-        loot: [
-            { item: "gas_can", weight: 1 }
-        ]
+        loot: [{ item: "gas_can", weight: 1 }]
     },
     airdrop_crate: {
         min: 1,
         max: 1,
         loot: [
-            [
-                { tier: "airdrop_equipment", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_scopes", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_healing_items", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_skins", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_melee", weight: 1 }
-            ],
-            [
-                { tier: "ammo", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_guns", weight: 1 }
-            ]
+            [{ tier: "airdrop_equipment", weight: 1 }],
+            [{ tier: "airdrop_scopes", weight: 1 }],
+            [{ tier: "airdrop_healing_items", weight: 1 }],
+            [{ tier: "airdrop_skins", weight: 1 }],
+            [{ tier: "airdrop_melee", weight: 1 }],
+            [{ tier: "ammo", weight: 1 }],
+            [{ tier: "airdrop_guns", weight: 1 }]
         ]
     },
     gold_airdrop_crate: {
         min: 1,
         max: 1,
         loot: [
-            [
-                { tier: "airdrop_equipment", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_scopes", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_healing_items", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_skins", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_melee", weight: 1 }
-            ],
-            [
-                { tier: "ammo", weight: 1 }
-            ],
-            [
-                { tier: "gold_airdrop_guns", weight: 1 }
-            ]
+            [{ tier: "airdrop_equipment", weight: 1 }],
+            [{ tier: "airdrop_scopes", weight: 1 }],
+            [{ tier: "airdrop_healing_items", weight: 1 }],
+            [{ tier: "airdrop_skins", weight: 1 }],
+            [{ tier: "airdrop_melee", weight: 1 }],
+            [{ tier: "ammo", weight: 1 }],
+            [{ tier: "gold_airdrop_guns", weight: 1 }]
         ]
     },
     flint_stone: {
