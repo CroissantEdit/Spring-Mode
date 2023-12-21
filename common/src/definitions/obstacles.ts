@@ -279,7 +279,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 spawnMin: 1,
                 spawnMax: 1,
                 destroy: 1
-            
+
             },
             hitbox: RectangleHitbox.fromRect(10.15, 1.6, v(-0.44, 0)),
             rotationMode: RotationMode.Limited,
@@ -408,9 +408,9 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             ]),*/
             rotationMode: RotationMode.Limited,
             hasLoot: true
-            
+
         },
-       
+
         {
             idString: "cherry_blossom_tree",
             name: "cherry_blossom_tree",
@@ -437,7 +437,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 destroy: 0.75
             },
             hitbox: new CircleHitbox(5.5),
-            rotationMode: RotationMode.Full, 
+            rotationMode: RotationMode.Full,
             spawnMode: MapObjectSpawnMode.RiverBank,
             zIndex: ZIndexes.ObstaclesLayer4
         },
@@ -534,8 +534,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             hitbox: new CircleHitbox(5.5),
             spawnHitbox: new CircleHitbox(2.7),
             rotationMode: RotationMode.Full,
-            
-            
+
             spawnMode: MapObjectSpawnMode.RiverBank,
             zIndex: ZIndexes.ObstaclesLayer4
         },
@@ -1112,7 +1111,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 residue: "toilet_residue"
             }
         },
-       
+
         {
             idString: "small_drawer",
             name: "Small Drawer",
@@ -1160,7 +1159,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 destroy: 0.8
             },
             hideOnMap: true,
-            hitbox: RectangleHitbox.fromRect(13.5, 9,),
+            hitbox: RectangleHitbox.fromRect(13.5, 9),
             rotationMode: RotationMode.Limited,
             hasLoot: false,
             reflectBullets: true,
@@ -1179,7 +1178,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 destroy: 0.9
             },
             hideOnMap: true,
-            hitbox: RectangleHitbox.fromRect(10, 17.2,),
+            hitbox: RectangleHitbox.fromRect(10, 17.2),
             rotationMode: RotationMode.Limited,
             hasLoot: true,
             frames: {
@@ -1197,7 +1196,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 destroy: 0.9
             },
             hideOnMap: true,
-            hitbox: RectangleHitbox.fromRect(10, 17.2,),
+            hitbox: RectangleHitbox.fromRect(10, 17.2),
             rotationMode: RotationMode.Limited,
             hasLoot: true,
             frames: {
@@ -1215,7 +1214,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 destroy: 0.9
             },
             hideOnMap: true,
-            hitbox: RectangleHitbox.fromRect(10, 17.2,),
+            hitbox: RectangleHitbox.fromRect(10, 17.2),
             rotationMode: RotationMode.Limited,
             hasLoot: true,
             frames: {
@@ -1233,7 +1232,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 destroy: 0.9
             },
             hideOnMap: true,
-            hitbox: RectangleHitbox.fromRect(10, 17.2,),
+            hitbox: RectangleHitbox.fromRect(10, 17.2),
             rotationMode: RotationMode.Limited,
             hasLoot: true,
             frames: {
