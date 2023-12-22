@@ -81,7 +81,8 @@ export const LootTables: Record<string, LootTable> = {
         min: 1,
         max: 1,
         loot: [
-            { item: "katana", weight: 1 }
+            { item: "spear", weight: 1 }  //katana CRATE BABBY
+            
         ]  
     },
     flower_pot: {

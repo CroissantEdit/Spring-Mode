@@ -86,6 +86,36 @@ export const Melees: MeleeDefinition[] = [
         }
     },
     {
+        idString: "spear",
+        name: "spear",
+        itemType: ItemType.Melee,
+        damage: 35,
+        obstacleMultiplier: 2,
+        piercingMultiplier: 1,
+        radius: 2.7,
+        offset: Vec.create(5.9, -1),
+        cooldown: 350,
+        speedMultiplier: 1,
+        maxTargets: 1,
+        fists: {
+            animationDuration: 150,
+            randomFist: false,
+            left: Vec.create(0, 40),
+            right: Vec.create(-30, 35),
+            useLeft: Vec.create(50, 30), 
+            useRight: Vec.create(20, 35)
+        },
+        image: {
+            position: Vec.create(55, 30),
+            usePosition: Vec.create(95, 30),
+            angle: 45, 
+            useAngle: 45,
+            // if you make angle and useangle to 0, you can make a spear lmfao
+            // if you turn the use angle to 360, it will become a boomerang
+            lootScale: .85
+        }
+    },
+    {
         idString: "baseball_bat",
         name: "Baseball Bat",
         itemType: ItemType.Melee,
