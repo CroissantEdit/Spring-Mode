@@ -26,6 +26,18 @@ export const Modes: ModeDefinition[] = [
         }
     },
     {
+        idString: "gladiator",
+        colors: {
+            grass: "hsl(35, 64%, 81%)",
+            water: "hsl(211, 63%, 42%)",
+            border: "hsl(211, 63%, 30%)",
+            beach: "hsl(40, 39%, 55%)",
+            riverBank: "hsl(33, 50%, 30%)",
+            gas: "hsla(17, 100%, 50%, 0.55)"
+        },
+   
+    },
+    {
         idString: "halloween",
         colors: {
             grass: "hsl(65, 100%, 12%)",

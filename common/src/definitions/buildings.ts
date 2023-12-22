@@ -1957,6 +1957,94 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
             { idString: "ship", position: Vec.create(82, -50) },
             { idString: "crane", position: Vec.create(-20, -95) }
         ]
+    },
+    {
+        idString: "Japan",
+        name: "Japan",
+        spawnHitbox: RectangleHitbox.fromRect(60, 88),
+        ceilingHitbox: RectangleHitbox.fromRect(40, 80),
+        scopeHitbox: RectangleHitbox.fromRect(40, 70),
+        floorImages: [{
+            key: "japan_floor",
+            position: Vec.create(0, 0)
+        }],
+        ceilingImages: [{
+            key: "japan_ceiling",
+            position: Vec.create(0, 0)
+        }],
+        floors: [
+            {
+                type: "stone",
+                hitbox: RectangleHitbox.fromRect(40, 88)
+            }
+        ],
+        obstacles: [
+            {
+                idString: "japan_wall_1",
+                position: Vec.create(-20, 7),
+                rotation: 1
+            },
+            {
+                idString: "japan_wall_2",
+                position: Vec.create(.5, 32.35),
+                rotation: 2
+            },
+            {
+                idString: "japan_wall_2",
+                position: Vec.create(-0.5, -32.35),
+                rotation: 2
+            },
+            {
+                idString: "japan_wall_3",
+                position: Vec.create(5.35, 20),
+                rotation: 2
+            },
+            {
+                idString: "japan_wall_3",
+                position: Vec.create(-5.35, -20),
+                rotation: 2
+            },          
+            {
+                idString: "japan_wall_1",
+                position: Vec.create(20, -7),
+                rotation: 1
+            },
+            {
+                idString: "flower_pot",
+                position: Vec.create(-15.1, -15),
+                rotation: 1
+            },
+            {
+                idString: "flower_pot",
+                position: Vec.create(-7.3, -15),
+                rotation: 1
+            },
+            {
+                idString: "flower_pot",
+                position: Vec.create(15.1, 15),
+                rotation: 1
+            },
+            {
+                idString: "flower_pot",
+                position: Vec.create(7.3, 15),
+                rotation: 1
+            },
+            {
+                idString: "wood_sliding_door",
+                position: Vec.create(-14.8, 20),
+                rotation: 2
+            },
+            {
+                idString: "wood_sliding_door",
+                position: Vec.create(14.8, -20),
+                rotation: 0
+            },
+            {
+                idString: "katana_crate",
+                position: Vec.create(0, 0),
+                rotation: 1
+            },
+          
+        ],
     }
-
 ]);

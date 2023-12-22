@@ -128,7 +128,7 @@ function makeCrate(idString: string, name: string, options: Partial<ObstacleDefi
             spawnMax: 1,
             destroy: 0.5
         },
-        spawnMode: MapObjectSpawnMode.GrassAndSand,
+        spawnMode: MapObjectSpawnMode.Grass,
         hitbox: RectangleHitbox.fromRect(9.2, 9.2),
         hasLoot: true,
         ...options
@@ -275,6 +275,36 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             zIndex: ZIndexes.ObstaclesLayer4
         },
         {
+            idString: "olive_tree",
+            name: "olive_tree",
+            material: "tree",
+            health: 180,
+            scale: {
+                spawnMin: 0.9,
+                spawnMax: 1,
+                destroy: 0.75
+            },
+            hitbox: new CircleHitbox(5.5),
+            spawnHitbox: new CircleHitbox(15),
+            rotationMode: RotationMode.Full,
+            zIndex: ZIndexes.ObstaclesLayer4
+        },
+        {
+            idString: "treasure_pirate_chest",
+            name: "treasure_pirate_chest",
+            material: "wood",
+            health: 150,
+            scale: {
+                spawnMin: 1.0,
+                spawnMax: 1.0,
+                destroy: 0.7
+            },
+            hitbox: RectangleHitbox.fromRect(12, 7, Vec.create(0, -.4)),
+            rotationMode: RotationMode.Limited,
+            hasLoot: true,
+            spawnMode: MapObjectSpawnMode.Beach,
+        },
+        {
             idString: "pine_tree",
             name: "Pine Tree",
             material: "tree",
@@ -351,6 +381,144 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             spawnHitbox: new CircleHitbox(3),
             rotationMode: RotationMode.Full,
             hasLoot: true
+        },
+        {
+            idString: "japan_wall_1",
+            name: "Japan Wall",
+            material: "wood",
+            health: 500,
+            indestructible: false,
+            hideOnMap: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.95
+            },
+            hitbox: RectangleHitbox.fromRect(52.5, 1.7),
+            rotationMode: RotationMode.Limited,
+            reflectBullets: false,
+            noResidue: true,
+            frames: {
+                particle: "wood_particle"
+            }
+        },
+        {
+            idString: "japan_wall_2",
+            name: "Japan Wall",
+            material: "wood",
+            health: 500,
+            indestructible: false,
+            hideOnMap: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.95
+            },
+            hitbox: RectangleHitbox.fromRect(41, 1.7),
+            rotationMode: RotationMode.Limited,
+            reflectBullets: false,
+            noResidue: true,
+            frames: {
+                particle: "wood_particle"
+            }
+        },
+        {
+            idString: "japan_wall_3",
+            name: "Japan Wall",
+            material: "wood",
+            health: 500,
+            indestructible: false,
+            hideOnMap: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.95
+            },
+            hitbox: RectangleHitbox.fromRect(31, 1.7),
+            rotationMode: RotationMode.Limited,
+            reflectBullets: false,
+            noResidue: true,
+            frames: {
+                particle: "wood_particle"
+            }
+        },
+        {
+            idString: "wood_sliding_door",
+            name: "wood_sliding_door",
+            material: "wood",
+            health: 150,
+            operationStyle: "slide",
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 1
+            
+            },
+            hitbox: RectangleHitbox.fromRect(10.15, 1.6, Vec.create(-0.44, 0)),
+            rotationMode: RotationMode.Limited,
+            noResidue: true,
+            role: ObstacleSpecialRoles.Door,
+            zIndex: ZIndexes.ObstaclesLayer3,
+            frames: {
+                particle: "wood_particle"
+            }
+        },
+        {
+            idString: "katana_crate",
+            name: "katana crate",
+            material: "wood",
+            health: 150,
+            scale: {
+                spawnMin: 1.0,
+                spawnMax: 1.0,
+                destroy: 0.7
+            },
+            hitbox: RectangleHitbox.fromRect(15, 6.5),
+            rotationMode: RotationMode.Limited,
+            hasLoot: true
+        },
+        {
+            idString: "flower_pot",
+            name: "flower_pot",
+            material: "porcelain",
+            health: 100,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.8
+            },
+            hitbox: new CircleHitbox(3.7),
+            // TODO Figure out why this doesn't work
+            /*hitbox: new ComplexHitbox([
+                RectangleHitbox.fromRect(v(-3.18, 1.25), v(3.2, 4.05)),
+                new CircleHitbox(2.5)
+            ]),*/
+            rotationMode: RotationMode.Limited,
+            hasLoot: true
+            
+        },
+        {
+            idString: "hedgehog",
+            name: "hedgehog",
+            material: "metal",
+            health: 200,
+            impenetrable: true,
+            hasLoot: false,
+            indestructible: true,
+            reflectBullets: true,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.5
+            },    
+            spawnHitbox: new CircleHitbox(20),
+            hitbox: new HitboxGroup(
+                 RectangleHitbox.fromRect(1.86, 13.3),
+                 RectangleHitbox.fromRect(13.3, 1.86),
+
+            ),
+            spawnMode: MapObjectSpawnMode.Beach,
+            rotationMode: RotationMode.None,
         },
         {
             idString: "flint_stone",

@@ -54,6 +54,19 @@ export const LootTables: Record<string, LootTable> = {
             { tier: "special_scopes", weight: 0.3 }
         ]
     },
+    treasure_pirate_chest: {
+        min: 2,
+        max: 4,
+        loot: [
+            { item: "aug", weight: 0.7 },
+            { item: "flues", weight: 0.4 },
+            { item: "ak47", weight: 0.8},
+            { item: "arx160", weight: 0.3 },
+            { item: "mini14", weight: 0.5 },
+            { item: "sr25", weight: 0.2 },
+            { item: "stoner_63", weight: 0.01 },
+        ]
+    },
     flint_crate: {
         min: 3,
         max: 5,
@@ -62,6 +75,24 @@ export const LootTables: Record<string, LootTable> = {
             { tier: "special_equipment", weight: 0.65 },
             { tier: "special_healing_items", weight: 0.15 },
             { tier: "special_scopes", weight: 0.3 }
+        ]
+    },
+    katana_crate: {
+        min: 1,
+        max: 1,
+        loot: [
+            { item: "katana", weight: 1 }
+        ]  
+    },
+    flower_pot: {
+        min: 1,
+        max: 1,
+        loot: [  
+            { tier: "special_guns", weight: 1 },
+            { tier: "special_healing_items", weight: 0.15 },
+            { tier: "special_equipment", weight: 0.65 },
+            { tier: "special_scopes", weight: 0.3 },
+            { item: "saiga_12", weight: 0.0001 },
         ]
     },
     melee_crate: {
@@ -430,7 +461,8 @@ export const LootTiers: Record<string, WeightedItem[]> = {
     ],
     melee: [
         { item: "baseball_bat", weight: 4 },
-        { item: "kbar", weight: 2 }
+        { item: "kbar", weight: 2 },
+        { item: "katana", weight: 0 },
     ],
     airdrop_equipment: [
         { item: "tactical_helmet", weight: 1 },

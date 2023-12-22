@@ -4,7 +4,7 @@ import { Modes, type ColorKeys } from "../../../../common/src/definitions/modes"
 import { Config } from "../config";
 
 export const UI_DEBUG_MODE = false;
-export const HITBOX_DEBUG_MODE = false;
+export const HITBOX_DEBUG_MODE = true;
 
 export const HITBOX_COLORS = {
     obstacle: new Color("red"),
@@ -30,7 +30,7 @@ export const COLORS = (Object.keys(MODE.colors) as ColorKeys[])
         {} as Record<ColorKeys, Color>
     );
 
-export const GHILLIE_TINT = COLORS.grass.multiply(new Color("hsl(0, 0%, 99%)"));
+export const GHILLIE_TINT = COLORS.grass.multiply(new Color("hsl(35, 64%, 81%)"));
 
 export const PIXI_SCALE = 20;
 

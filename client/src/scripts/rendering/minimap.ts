@@ -23,7 +23,7 @@ export class Minimap {
     // used for the gas to player line and circle
     gasPos = Vec.create(0, 0);
     gasRadius = 0;
-    gasGraphics = new Graphics();
+    gasGraphics = new Graphics(); 
 
     readonly objectsContainer = new Container();
     readonly container = new Container();

@@ -20,7 +20,7 @@ type MapObject = {
 });
 
 export class MapPacket extends Packet {
-    override readonly allocBytes = 1 << 16;
+    override readonly allocBytes = 1 << 19;
     override readonly type = PacketType.Map;
 
     seed!: number;
