@@ -35,13 +35,19 @@ export const LootTables: Record<string, LootTable> = {
         min: 1,
         max: 1,
         loot: [
-            { tier: "guns", weight: 1.25 },
-            { tier: "equipment", weight: 1 },
-            { tier: "scopes", weight: 0.3 },
-            { tier: "healing_items", weight: 1 },
-            { tier: "ammo", weight: 0.5 },
-            { tier: "melee", weight: 0.04 },
-            { tier: "winter_skins", weight: 0.4 } // winter mode
+            { tier: "guns", weight: 0 },
+            { tier: "equipment", weight: 0 },
+            { tier: "scopes", weight: 0 },
+            { tier: "healing_items", weight: 0 },
+            { tier: "ammo", weight: 0 },
+            { tier: "melee", weight: 0 },
+            { tier: "winter_skins", weight: 0 }, // winter mode
+            { item: "radio", weight: 0 },
+            { item: "L85A2", weight: 0 },
+            { item: "kar98", weight: 1 },
+
+
+
         ]
     },
     aegis_crate: {
@@ -427,6 +433,9 @@ export const LootTiers: Record<string, WeightedItem[]> = {
         { item: "g19", weight: 0.45 },
         { item: "m1895", weight: 0.45 },
         { item: "vss", weight: 0.07 },
+        { item: "L85A2", weight: 0 },
+        { item: "kar98", weight: 1 },
+
         { item: "sr25", weight: 0.05 },
         { item: "mini14", weight: 0.05 },
         { item: "mcx_spear", weight: 0.05 },

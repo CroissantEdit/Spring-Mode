@@ -161,6 +161,75 @@ const GunsRaw: RawGunDefinition[] = [
         }
     },
     {
+        idString: "L85A2",
+        name: "L85A2",
+        itemType: ItemType.Gun,
+        ammoType: "556mm",
+        ammoSpawnAmount: 90,
+        capacity: 30,
+        reloadTime: 2.8,
+        fireDelay: 140,
+        switchDelay: 400,
+        speedMultiplier: 0.92,
+        recoilMultiplier: 0.8,
+        recoilDuration: 150,
+        fireMode: FireMode.Single,
+        shotSpread: 2,
+        moveSpread: 3.5,
+        length: 7.5,
+        fists: {
+            left: Vec.create(120, -2),
+            right: Vec.create(45, 0),
+            rightZIndex: 4,
+            animationDuration: 100
+        },
+        image: { position: Vec.create(90, 2) },
+        casingParticles: {
+            position: Vec.create(4, 0.6)
+        },
+        ballistics: {
+            damage: 22,
+            obstacleMultiplier: 1.5,
+            speed: 0.33,
+            range: 220
+        }
+    },
+    {
+        idString: "kar98",
+        name: "kar98",
+        itemType: ItemType.Gun,
+        ammoType: "762mm",
+        ammoSpawnAmount: 20,
+        capacity: 5,
+        reloadTime: 1,
+        singleReload: true,
+        fireDelay: 1200,
+        switchDelay: 900,
+        speedMultiplier: 0.9,
+        recoilMultiplier: 0.4,
+        recoilDuration: 850,
+        fireMode: FireMode.Single,
+        shotSpread: 1.2,
+        moveSpread: 2,
+        length: 7.5,
+        fists: {
+            left: Vec.create(120, -2),
+            right: Vec.create(45, 0),
+            rightZIndex: 4,
+            animationDuration: 100
+        },
+        image: { position: Vec.create(90, 2) },
+        casingParticles: {
+            position: Vec.create(4, 0.6)
+        },
+        ballistics: {
+            damage: 78,
+            obstacleMultiplier: 1,
+            speed: 0.32,
+            range: 230
+        }
+    },
+    {
         idString: "arx160",
         name: "ARX-160",
         itemType: ItemType.Gun,

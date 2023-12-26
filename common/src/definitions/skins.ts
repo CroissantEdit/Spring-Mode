@@ -94,6 +94,16 @@ export const Skins = new ObjectDefinitions<SkinDefinition>([
         itemType: ItemType.Skin
     },
     {
+        idString: "core_skin",
+        name: "Armadillo",
+        itemType: ItemType.Skin
+    },
+    {
+        idString: "tigor_skin",
+        name: "Tigor",
+        itemType: ItemType.Skin
+    },
+    {
         idString: "greenhorn",
         name: "Greenhorn",
         itemType: ItemType.Skin
