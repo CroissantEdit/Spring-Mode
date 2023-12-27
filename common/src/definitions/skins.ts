@@ -9,9 +9,16 @@ export interface SkinDefinition extends ItemDefinition {
 }
 
 export const Skins = new ObjectDefinitions<SkinDefinition>([
+
     {
         idString: "hasanger",
         name: "Hasanger",
+        itemType: ItemType.Skin,
+        roleRequired: "hasanger"
+    },
+    {
+        idString: "tigor_skin", //this thing is broken, if i dont name it tigor_skin it breaks lmfao
+        name: "tigor_skin",
         itemType: ItemType.Skin,
         roleRequired: "hasanger"
     },
