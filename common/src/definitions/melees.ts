@@ -67,6 +67,33 @@ export const Melees: Array<MeleeDefinition | SpawnMeleeDefinition> = [
         }
     },
     {
+        idString: "knife",
+        name: "knife",
+        itemType: ItemType.Melee,
+        damage: 20,
+        obstacleMultiplier: 1,
+        radius: 1.5,
+        offset: Vec.create(2.5, 0),
+        cooldown: 250,
+        speedMultiplier: 1,
+        canSpawnWith: true,
+        maxTargets: 1,
+        fists: {
+            animationDuration: 100,
+            left: Vec.create(38, -35),
+            right: Vec.create(38, 35),
+            useLeft: Vec.create(38, -35),
+            useRight: Vec.create(70, 20)
+        },
+        image: {
+            position: Vec.create(62, 42),
+            usePosition: Vec.create(90, 8),
+            angle: 360,
+            useAngle: 5,
+            lootScale: 0.8
+        }
+    },
+    {
         idString: "baseball_bat",
         name: "Baseball Bat",
         itemType: ItemType.Melee,
