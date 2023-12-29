@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="48.111855"
+   height="93.884201"
+   viewBox="0 0 48.111854 93.884198"
+   id="svg9"
+   sodipodi:docname="push_knife.svg"
+   inkscape:export-filename="push_knife.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     transform="matrix(0,0.59171652,-0.59171652,0,137.67709,-94.982821)"
+     id="g9">
+    <g
+       data-paper-data="{&quot;isPaintingLayer&quot;:true}"
+       fill-rule="nonzero"
+       stroke-linejoin="miter"
+       stroke-miterlimit="10"
+       stroke-dasharray="none"
+       stroke-dashoffset="0"
+       style="mix-blend-mode:normal"
+       id="g8">
+      <g
+         id="g7">
+        <path
+           d="m 161.27094,192.27017 c 17.87899,-9.19606 23.08296,-15.419 65.99942,-15.94464 7.79844,-0.0932 14.16601,0 17.47777,0 0.5711,0 1.05133,-0.78847 1.43239,-0.78847 0.79695,0 1.92268,0 2.25134,0 0.40258,0 0.0853,11.0493 0.005,14.96173 -0.0222,1.08131 -1.52907,1.77139 -1.52907,1.77139"
+           fill="#646870"
+           stroke="#1f2023"
+           stroke-width="1.5"
+           stroke-linecap="round"
+           id="path1" />
+        <path
+           d="m 254.85045,177.88011 c 3.8634,3.78483 7.75823,10.90328 12.18998,10.90328 2.78764,0 18.07197,1.97093 22.71463,-7.2012 2.51389,-5.42327 -0.14072,-14.37288 0.0437,-20.86514 0.14896,-5.24314 2.5152,-9.05497 8.10644,-8.56061 12.73055,0.7582 20.1947,20.95502 20.52972,40.0535 -0.18022,19.69211 -7.86496,39.08522 -20.90858,39.70399 -4.91579,0.2332 -7.27218,-3.3968 -7.51932,-8.38852 -0.33612,-6.78891 2.33592,-15.8338 -0.50824,-21.36765 -4.33657,-8.43762 -20.41973,-6.82215 -22.45836,-6.74244 -4.49144,0.15282 -8.52778,7.36669 -12.28426,11.20485 -2.73652,2.79602 -5.96594,2.35686 -5.96594,2.35686 0,0 -0.3092,-8.26047 -0.3092,-14.6145 0,-0.38504 -0.069,-0.70943 -0.2519,-0.97934 -0.42262,-0.62364 -1.18514,-0.95643 -1.19253,-1.07466 -0.0105,-0.16833 0.79841,-0.49502 1.21066,-1.24162 0.15212,-0.27549 0.19681,-0.60817 0.20285,-1.01115 0.0775,-5.17164 0.34013,-14.51866 0.34013,-14.51866 0,0 3.59501,-0.072 6.0602,2.34303 z m 53.02256,14.38978 c 0,1.45154 1.1767,2.62824 2.62824,2.62824 1.45154,0 2.62824,-1.1767 2.62824,-2.62824 0,-1.45154 -1.1767,-2.62823 -2.62824,-2.62823 -1.45154,0 -2.62824,1.17669 -2.62824,2.62824 z"
+           fill="#50515a"
+           stroke="#1f2023"
+           stroke-width="1.5"
+           stroke-linecap="butt"
+           id="path2" />
+        <path
+           d="m 246.90767,192.24389 c 0,0 1.50685,0.69007 1.52907,1.77138 0.0804,3.91244 0.39772,14.96173 -0.005,14.96173 -0.32866,0 -1.45439,0 -2.25134,0 -0.38106,0 -0.8613,-0.78847 -1.43239,-0.78847 -3.31176,0 -9.67933,0.0932 -17.47777,0 -42.91646,-0.52564 -48.34571,-6.37312 -65.99942,-15.94464"
+           data-paper-data="{&quot;index&quot;:null}"
+           fill="#2f3137"
+           stroke="#1f2023"
+           stroke-width="1.5"
+           stroke-linecap="round"
+           id="path3" />
+        <path
+           d="m 292.59722,182.12975 c 2.04436,-5.01251 -0.28111,-13.04135 -0.13112,-19.04189 0.12114,-4.84602 1.31786,-8.36915 5.86482,-7.91223 10.83657,1.20652 16.81716,19.43423 17.0896,37.08619 -0.11332,18.33204 -6.79025,36.05853 -17.3977,36.63044 -3.99767,0.21553 -5.18638,-3.13952 -5.38736,-7.75317 -0.27334,-6.27472 2.0663,-14.87745 -0.24665,-19.99216 -1.48919,-3.6314 -5.36521,-5.9704 -8.24893,-7.33415 -2.63367,-1.2455 -2.62894,-2.14466 -0.0332,-3.3937 2.91225,-1.40134 6.7649,-3.81177 8.4451,-8.28931 z m 15.27579,10.14014 c 0,1.45154 1.1767,2.62824 2.62824,2.62824 1.45154,0 2.62824,-1.1767 2.62824,-2.62824 0,-1.45154 -1.1767,-2.62823 -2.62824,-2.62823 -1.45154,0 -2.62824,1.17669 -2.62824,2.62824 z"
+           fill="#3f4047"
+           stroke="#3f4047"
+           stroke-width="1.5"
+           stroke-linecap="butt"
+           id="path4" />
+        <path
+           d="m 249.09611,175.83931 h 3.14214 l -3.14214,15.06856 z"
+           fill="#1f2023"
+           stroke="none"
+           stroke-width="0"
+           stroke-linecap="butt"
+           id="path5" />
+        <path
+           d="m 249.09611,193.57991 3.14214,15.06855 h -3.14214 z"
+           data-paper-data="{&quot;index&quot;:null}"
+           fill="#1f2023"
+           stroke="none"
+           stroke-width="0"
+           stroke-linecap="butt"
+           id="path6" />
+        <text
+           transform="matrix(0.0645,0,0,0.0645,224.85019,180.59201)"
+           font-size="40px"
+           xml:space="preserve"
+           fill="#c5c8d2"
+           fill-rule="nonzero"
+           stroke="#c5c8d2"
+           stroke-width="3"
+           stroke-linecap="butt"
+           stroke-linejoin="miter"
+           stroke-miterlimit="10"
+           stroke-dasharray="none"
+           stroke-dashoffset="0"
+           font-family="'Comic Sans MS', 'Sans Serif'"
+           font-weight="normal"
+           text-anchor="start"
+           style="mix-blend-mode:normal"
+           id="text6"><tspan
+             x="0"
+             dy="0"
+             id="tspan6">DWOP FORGDE</tspan></text>
+        <text
+           transform="matrix(0.0463,0,0,0.0463,233.54398,182.79447)"
+           font-size="40px"
+           xml:space="preserve"
+           fill="#b7bac3"
+           fill-rule="nonzero"
+           stroke="none"
+           stroke-width="1"
+           stroke-linecap="butt"
+           stroke-linejoin="miter"
+           stroke-miterlimit="10"
+           stroke-dasharray="none"
+           stroke-dashoffset="0"
+           font-family="'Comic Sans MS', 'Sans Serif'"
+           font-weight="normal"
+           text-anchor="start"
+           style="mix-blend-mode:normal"
+           id="text7"><tspan
+             x="0"
+             dy="0"
+             id="tspan7">PUSH NIFE</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
+<!--rotationCenter:79.47906381004066:28.63669637482127-->
+
