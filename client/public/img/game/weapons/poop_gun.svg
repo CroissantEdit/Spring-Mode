@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="85.492966"
+   height="99.385056"
+   viewBox="0 0 85.492966 99.385056"
+   fill="none"
+   version="1.1"
+   id="svg55"
+   sodipodi:docname="aug.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview57"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="7.9181818"
+     inkscape:cx="54.936854"
+     inkscape:cy="54.936854"
+     inkscape:window-width="2560"
+     inkscape:window-height="1372"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg55"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs53" />
+  <circle
+     style="fill:#e2cec0;stroke:#e2cec0;stroke-width:2.64567;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:5;paint-order:fill markers stroke"
+     id="path1"
+     cx="19.887703"
+     cy="79.244766"
+     r="18.564869" />
+  <circle
+     style="fill:#e2cec0;stroke:#e2cec0;stroke-width:2.64567;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:5;paint-order:fill markers stroke"
+     id="circle2"
+     cx="65.605263"
+     cy="79.497353"
+     r="18.564869" />
+  <ellipse
+     style="fill:#e2cec0;stroke:#e2cec0;stroke-width:2.51256;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:5;paint-order:fill markers stroke"
+     id="path2"
+     cx="41.988735"
+     cy="36.870525"
+     rx="15.726716"
+     ry="35.614246" />
+</svg>
