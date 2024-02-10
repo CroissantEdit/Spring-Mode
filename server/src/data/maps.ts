@@ -69,6 +69,7 @@ export const Maps: Record<string, MapDefinition> = {
             container_3: 1,
             container_4: 2,
             container_5: 1,
+            Candy_Store: 25,
             container_6: 2,
             container_7: 1,
             container_8: 2,
@@ -85,6 +86,8 @@ export const Maps: Record<string, MapDefinition> = {
             flint_crate: 5,
             aegis_crate: 5,
             grenade_crate: 40,
+            bank_tree: 300,  //spring mode
+            bank_birch_tree: 35,  //spring mode
             rock: 150,
             river_rock: 45,
             bush: 110,

@@ -345,6 +345,39 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             allowFlyover: FlyoverPref.Always
         },
         {
+            idString: "bank_tree",
+            name: "bank_tree",
+            material: "tree",
+            health: 180,
+            scale: {
+                spawnMin: 0.9,
+                spawnMax: 1,
+                destroy: 0.75
+            },
+            hitbox: new CircleHitbox(5.5),
+            allowFlyover: FlyoverPref.Never,
+            rotationMode: RotationMode.Full,
+            spawnMode: MapObjectSpawnMode.RiverBank,
+            zIndex: ZIndexes.ObstaclesLayer4,
+        },
+        {
+            idString: "bank_birch_tree",
+            name: "bank_birch_tree",
+            material: "tree",
+            health: 180,
+            scale: {
+                spawnMin: 0.9,
+                spawnMax: 1,
+                destroy: 0.75
+            },
+            hitbox: new CircleHitbox(5.5),
+            spawnHitbox: new CircleHitbox(2.7),
+            rotationMode: RotationMode.Full,
+            allowFlyover: FlyoverPref.Never,
+            spawnMode: MapObjectSpawnMode.RiverBank,
+            zIndex: ZIndexes.ObstaclesLayer4,
+        },
+        {
             idString: "grenade_box",
             name: "grenade_box",
             material: "cardboard",

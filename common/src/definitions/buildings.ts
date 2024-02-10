@@ -537,6 +537,41 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
         ]
     },
     {
+        idString: "Candy_Store",
+        name: "Candy_Store",
+        spawnHitbox: RectangleHitbox.fromRect(60, 88),
+        scopeHitbox: RectangleHitbox.fromRect(40, 70),
+        floorImages: [{
+            key: "warehouse_floor",
+            position: Vec.create(0, 0)
+        }],
+        ceilingImages: [{
+            key: "warehouse_ceiling",
+            position: Vec.create(0, 0)
+        }],
+        floors: [
+            {
+                type: "wood",
+                hitbox: RectangleHitbox.fromRect(40, 88)
+            }
+        ],
+        obstacles: [
+            {
+                idString: "port_warehouse_walls",
+                position: Vec.create(2, -30.2),
+                rotation: 0
+            },
+            
+        ],
+
+        lootSpawners: [
+            {
+                position: Vec.create(0, 0),
+                table: "warehouse"
+            }
+        ]
+    },
+    {
         idString: "port_warehouse_red",
         name: "Red Port Warehouse",
         spawnHitbox: RectangleHitbox.fromRect(72, 130),

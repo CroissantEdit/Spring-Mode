@@ -63,6 +63,19 @@ export const Modes: ModeDefinition[] = [
         specialMenuMusic: true,
         reskin: "winter",
         bulletTrailAdjust: "hsl(0, 50%, 80%)"
+    },
+    {
+        idString: "spring",
+        colors: {
+            grass: "hsl(113, 42%, 42%)",
+            water: "hsl(211, 63%, 42%)",
+            border: "hsl(211, 63%, 30%)",
+            beach: "hsl(40, 39%, 55%)",
+            riverBank: "hsl(0, 0%, 54%)",
+            gas: "hsla(329, 95%, 78%, 0.55)"
+        },
+        reskin: "spring",
+        bulletTrailAdjust: "hsl(330, 93%, 82%)"
     }
 ];
 
@@ -70,6 +83,18 @@ export const Reskins: Record<string, ReskinDefinition> = {
     fall: { // TODO
         textures: []
     },
+    spring: { 
+        textures: [
+            "oak_tree_1", "oak_tree_2", "oak_tree_3", "oak_tree_particle", "oak_tree_residue",
+            "birch_tree", "birch_tree_particle", "birch_tree_residue",
+            "bush", "bush_particle_1","bush_residue",
+            "bank_tree_1", "bank_tree_2", "bank_tree_3",
+            "bank_oak_tree_particle", "bank_oak_tree_residue",
+            "bank_birch_tree_1", "bank_birch_tree_2", "bank_birch_tree_3",
+            "bank_birch_tree_particle", "bank_birch_tree_residue",
+        ],
+},
+
     winter: {
         textures: [
             "oak_tree_1", "oak_tree_2", "oak_tree_3", "oak_tree_particle", "oak_tree_residue",
@@ -103,4 +128,5 @@ export const Reskins: Record<string, ReskinDefinition> = {
             "airdrop_plane"
         ]
     }
+    
 };
