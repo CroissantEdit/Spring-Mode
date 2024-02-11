@@ -168,6 +168,7 @@ function makeCrate(idString: string, name: string, options: Partial<ObstacleDefi
     } as ObstacleDefinition;
 }
 
+
 function makeHouseWall(lengthNumber: string, hitbox: Hitbox): ObstacleDefinition {
     return {
         idString: `house_wall_${lengthNumber}`,
@@ -828,6 +829,99 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             invisible: true,
             frames: {
                 particle: "metal_particle"
+            }
+        },
+        {
+            idString: "candy_store_wall",
+            name: "candy_store_wall",
+            material: "metal",
+            health: 1000,
+            indestructible: true,
+            hideOnMap: true,
+            hitbox: new HitboxGroup(
+                RectangleHitbox.fromRect(67.7, 1.8),
+            ),
+            rotationMode: RotationMode.Limited,
+            allowFlyover: FlyoverPref.Never,
+            reflectBullets: true,
+            noResidue: true,
+            frames: {
+                particle: "metal_particle"
+            }
+        },
+        {
+            idString: "candy_store_wall_1",
+            name: "candy_store_wall_1",
+            material: "metal",
+            health: 1000,
+            indestructible: true,
+            hideOnMap: true,
+            hitbox: new HitboxGroup(
+                RectangleHitbox.fromRect(60.7, 1.8),
+            ),
+            rotationMode: RotationMode.Limited,
+            allowFlyover: FlyoverPref.Never,
+            reflectBullets: true,
+            noResidue: true,
+            frames: {
+                particle: "metal_particle"
+            }
+        },
+        {
+            idString: "candy_store_wall_2",
+            name: "candy_store_wall_2",
+            material: "metal",
+            health: 1000,
+            indestructible: true,
+            hideOnMap: true,
+            hitbox: new HitboxGroup(
+                RectangleHitbox.fromRect(74.7, 1.8),
+            ),
+            rotationMode: RotationMode.Limited,
+            allowFlyover: FlyoverPref.Never,
+            reflectBullets: true,
+            noResidue: true,
+            frames: {
+                particle: "metal_particle"
+            }
+        },
+        {
+            idString: "candy_store_wall_3",
+            name: "candy_store_wall_3",
+            material: "metal",
+            health: 1000,
+            indestructible: true,
+            hideOnMap: true,
+            hitbox: new HitboxGroup(
+                RectangleHitbox.fromRect(19.4, 1.8),
+            ),
+            rotationMode: RotationMode.Limited,
+            allowFlyover: FlyoverPref.Never,
+            reflectBullets: true,
+            noResidue: true,
+            frames: {
+                particle: "metal_particle"
+            }
+        },
+        {
+            idString: "glass_sliding_door",
+            name: "glass_sliding_door",
+            material: "glass",
+            health: 150,
+            operationStyle: "slide",
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 1
+
+            },
+            hitbox: RectangleHitbox.fromRect(10.15, 1.6),
+            rotationMode: RotationMode.Limited,
+            noResidue: true,
+            role: ObstacleSpecialRoles.Door,
+            zIndex: ZIndexes.ObstaclesLayer3,
+            frames: {
+                particle: "furniture_particle"
             }
         },
         {

@@ -536,41 +536,66 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
             }
         ]
     },
+
+
     {
         idString: "Candy_Store",
         name: "Candy_Store",
         spawnHitbox: RectangleHitbox.fromRect(60, 88),
         scopeHitbox: RectangleHitbox.fromRect(40, 70),
         floorImages: [{
-            key: "warehouse_floor",
+            key: "candy_store_floor",
             position: Vec.create(0, 0)
         }],
         ceilingImages: [{
-            key: "warehouse_ceiling",
+            key: "candy_store_ceiling",
             position: Vec.create(0, 0)
         }],
-        floors: [
-            {
-                type: "wood",
-                hitbox: RectangleHitbox.fromRect(40, 88)
-            }
-        ],
         obstacles: [
             {
-                idString: "port_warehouse_walls",
-                position: Vec.create(2, -30.2),
+                idString: "candy_store_wall",
+                position: Vec.create(0, -43.2),
                 rotation: 0
             },
-            
-        ],
-
-        lootSpawners: [
             {
-                position: Vec.create(0, 0),
-                table: "warehouse"
-            }
-        ]
+                idString: "candy_store_wall",
+                position: Vec.create(0, 43.2),
+                rotation: 0
+            },
+            {
+                idString: "door",
+                position: Vec.create(-33.25, 36.9),
+                rotation: 1
+            },
+            {
+                idString: "candy_store_wall_2",
+                position: Vec.create(-33.25, -5),
+                rotation: 1
+            },
+            {
+                idString: "candy_store_wall_3",
+                position: Vec.create(33.25, -32.8),
+                rotation: 1
+            },
+            {
+                idString: "glass_sliding_door",
+                position: Vec.create(33.25, -18),
+                rotation: 3
+            },
+            {
+                idString: "glass_sliding_door",
+                position: Vec.create(33.25, -7.9),
+                rotation: 1
+            },
+            {
+                idString: "candy_store_wall_3",
+                position: Vec.create(33.25, 7.1),
+                rotation: 1
+            },
+        ],
     },
+
+
     {
         idString: "port_warehouse_red",
         name: "Red Port Warehouse",
