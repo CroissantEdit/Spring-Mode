@@ -569,12 +569,12 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
             },
             {
                 idString: "candy_store_wall_2",
-                position: Vec.create(-33.25, -5),
+                position: Vec.create(-33.2, -5),
                 rotation: 1
             },
             {
                 idString: "candy_store_wall_3",
-                position: Vec.create(33.25, -32.8),
+                position: Vec.create(33.17, -32.8),
                 rotation: 1
             },
             {
@@ -588,9 +588,24 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
                 rotation: 1
             },
             {
-                idString: "candy_store_wall_3",
-                position: Vec.create(33.25, 7.1),
+                idString: "candy_store_wall_4",
+                position: Vec.create(33.17, 19.7),
                 rotation: 1
+            },
+            {
+                idString: "candy_store_wall_5",
+                position: Vec.create(4.5, 19),
+                rotation: 0
+            },
+            {
+                idString: "door",
+                position: Vec.create(-28, 19),
+                rotation: 2
+            },
+            {
+                idString: "candy_box",
+                position: Vec.create(0, 0),
+                rotation: 2
             },
         ],
     },

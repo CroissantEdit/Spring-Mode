@@ -904,6 +904,53 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             }
         },
         {
+            idString: "candy_store_wall_4",
+            name: "candy_store_wall_4",
+            material: "metal",
+            health: 1000,
+            indestructible: true,
+            hideOnMap: true,
+            hitbox: new HitboxGroup(
+                RectangleHitbox.fromRect(45, 1.8),
+            ),
+            rotationMode: RotationMode.Limited,
+            allowFlyover: FlyoverPref.Never,
+            reflectBullets: true,
+            noResidue: true,
+            frames: {
+                particle: "metal_particle"
+            }
+        },
+       
+        {
+            idString: "candy_box",
+            name: "candy_box",
+            material: "crate",
+            health: 120,
+            hitbox: RectangleHitbox.fromRect(9.9, 6.9, Vec.create(0, -0.45)),
+            rotationMode: RotationMode.Limited,
+            allowFlyover: FlyoverPref.Always,
+            hasLoot: false
+        },
+        {
+            idString: "candy_store_wall_5",
+            name: "candy_store_wall_5",
+            material: "metal",
+            health: 1000,
+            indestructible: true,
+            hideOnMap: true,
+            hitbox: new HitboxGroup(
+                RectangleHitbox.fromRect(55.6, 1.8),
+            ),
+            rotationMode: RotationMode.Limited,
+            allowFlyover: FlyoverPref.Never,
+            reflectBullets: true,
+            noResidue: true,
+            frames: {
+                particle: "metal_particle"
+            }
+        },
+        {
             idString: "glass_sliding_door",
             name: "glass_sliding_door",
             material: "glass",
