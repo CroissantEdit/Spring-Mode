@@ -921,7 +921,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 particle: "metal_particle"
             }
         },
-       
+    
         {
             idString: "candy_box",
             name: "candy_box",
@@ -929,8 +929,39 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             health: 120,
             hitbox: RectangleHitbox.fromRect(9.9, 6.9, Vec.create(0, -0.45)),
             rotationMode: RotationMode.Limited,
-            allowFlyover: FlyoverPref.Always,
+            allowFlyover: FlyoverPref.Never,
             hasLoot: false
+        },
+        {
+            idString: "chocolate_box",
+            name: "chocolate_box",
+            material: "crate",
+            health: 120,
+            hitbox: RectangleHitbox.fromRect(9.9, 6.9, Vec.create(0, -0.45)),
+            rotationMode: RotationMode.Limited,
+            allowFlyover: FlyoverPref.Never,
+            hasLoot: false
+        },
+        {
+            idString: "candy_on_table",
+            name: "candy_on_table",
+            material: "crate",
+            health: 120,
+            hitbox: RectangleHitbox.fromRect(17.3, 5.9),
+            rotationMode: RotationMode.Limited,
+            allowFlyover: FlyoverPref.Never,
+            hasLoot: false
+        },
+        {
+            idString: "round_candy_table",
+            name: "round_candy_table",
+            material: "crate",
+            health: 120,
+            hitbox: new CircleHitbox(6),
+            rotationMode: RotationMode.Limited,
+            allowFlyover: FlyoverPref.Never,
+            hasLoot: false,
+            variations: 3,
         },
         {
             idString: "candy_store_wall_5",
@@ -941,6 +972,24 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             hideOnMap: true,
             hitbox: new HitboxGroup(
                 RectangleHitbox.fromRect(55.6, 1.8),
+            ),
+            rotationMode: RotationMode.Limited,
+            allowFlyover: FlyoverPref.Never,
+            reflectBullets: true,
+            noResidue: true,
+            frames: {
+                particle: "metal_particle"
+            }
+        },
+        {
+            idString: "candy_store_wall_6",
+            name: "candy_store_wall_5",
+            material: "metal",
+            health: 1000,
+            indestructible: true,
+            hideOnMap: true,
+            hitbox: new HitboxGroup(
+                RectangleHitbox.fromRect(36.25, 1.8),
             ),
             rotationMode: RotationMode.Limited,
             allowFlyover: FlyoverPref.Never,
