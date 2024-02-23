@@ -49,44 +49,21 @@ export const LootTables: Record<string, LootTable> = {
         min: 1,
         max: 1,
         loot: [
-            [
-                { item: "seax", weight: 1 }
-            ],
-            [
-                { tier: "viking_chest_guns", weight: 1 }
-            ],
-            [
-                { tier: "viking_chest_guns", weight: 1 }
-            ],
-            [
-                { tier: "special_equipment", weight: 0.65 },
-                { tier: "viking_chest_guns", weight: 0.5 },
-                { tier: "special_scopes", weight: 0.3 }
-            ],
-            [
-                { tier: "special_equipment", weight: 0.65 },
-                { tier: "special_scopes", weight: 0.3 }
-            ]
+            { item: "g19", weight: 2 },
         ]
     },
     aegis_crate: {
         min: 3,
         max: 5,
         loot: [
-            { tier: "special_guns", weight: 1 },
-            { tier: "special_healing_items", weight: 0.15 },
-            { tier: "special_equipment", weight: 0.65 },
-            { tier: "special_scopes", weight: 0.3 }
+            { item: "g19", weight: 2 },
         ]
     },
     flint_crate: {
         min: 3,
         max: 5,
         loot: [
-            { tier: "special_guns", weight: 1 },
-            { tier: "special_equipment", weight: 0.65 },
-            { tier: "special_healing_items", weight: 0.15 },
-            { tier: "special_scopes", weight: 0.3 }
+            { item: "g19", weight: 2 },
         ]
     },
     grenade_box: {
@@ -296,61 +273,14 @@ export const LootTables: Record<string, LootTable> = {
         min: 1,
         max: 1,
         loot: [
-            [
-                { tier: "airdrop_equipment", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_scopes", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_healing_items", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_skins", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_melee", weight: 1 }
-            ],
-            [
-                { tier: "ammo", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_guns", weight: 1 }
-            ],
-            [
-                { item: "frag_grenade", count: 3, weight: 2 },
-                { item: null, weight: 1 }
-            ]
+            { item: "g19", weight: 2 },
         ]
     },
     gold_airdrop_crate: {
         min: 1,
         max: 1,
         loot: [
-            [
-                { tier: "airdrop_equipment", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_scopes", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_healing_items", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_skins", weight: 1 }
-            ],
-            [
-                { tier: "airdrop_melee", weight: 1 }
-            ],
-            [
-                { tier: "ammo", weight: 1 }
-            ],
-            [
-                { tier: "gold_airdrop_guns", weight: 1 }
-            ],
-            [
-                { item: "frag_grenade", count: 3, weight: 1 }
-            ]
+            { item: "g19", weight: 2 },
         ]
     },
     flint_stone: {
