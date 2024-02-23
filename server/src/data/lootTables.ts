@@ -32,8 +32,8 @@ export const LootTables: Record<string, LootTable> = {
         ]
     },
     regular_crate: {
-        min: 1,
-        max: 1,
+        min: Math.floor(Math.random() * 2) + 1,
+        max: Math.floor(Math.random() * 5) + 1,
         loot: [
             { tier: "guns", weight: 1.25 },
             { tier: "equipment", weight: 1 },
